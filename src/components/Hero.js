@@ -11,9 +11,7 @@ const Hero = () => {
     }
 
     const specialToggle = () => {
-        if (isOpen) {
-            setIsOpen(!isOpen);
-        }
+        isOpen && setIsOpen(!isOpen);
     }
 
     return (
