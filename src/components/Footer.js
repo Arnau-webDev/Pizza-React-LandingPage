@@ -16,9 +16,9 @@ import {
     SocialIconLink
 } from './FooterElements';
 
-const Footer = () => {
+const Footer = ({ specialToggle }) => {
     return (
-        <FooterContainer>
+        <FooterContainer onClick={specialToggle}>
             <FooterWrap>
                 <SocialMedia>
                     <SocialMediaWrap>

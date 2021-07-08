@@ -3,16 +3,9 @@ import Navbar from './Navbar'
 import Sidebar from './Sidebar'
 import { HeroContainer, HeroContent, HeroItems, HeroH1, HeroP, HeroBtn } from './HeroElements';
 
-const Hero = () => {
-    const [isOpen, setIsOpen] = useState(false);
+const Hero = ({ handleSidebar }) => {
 
-    const toggle = () => {
-        setIsOpen(!isOpen);
-    }
-
-    const specialToggle = () => {
-        isOpen && setIsOpen(!isOpen);
-    }
+    const { toggle, specialToggle, isOpen } = handleSidebar;
 
     return (
         <HeroContainer>
