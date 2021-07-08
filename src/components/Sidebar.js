@@ -16,7 +16,14 @@ const Sidebar = ({ isOpen, toggle }) => {
                 <CloseIcon />
             </Icon>
             <SidebarMenu>
-                <SidebarLink to='/' onClick={toggle}>Pizzas</SidebarLink>
+                <SidebarLink
+                    activeClass="active"
+                    to="pizzaSection"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    onClick={toggle}>Pizzas</SidebarLink>
                 <SidebarLink to='/' onClick={toggle}>Desserts</SidebarLink>
                 <SidebarLink to='/' onClick={toggle}>Full Menu</SidebarLink>
             </SidebarMenu>
