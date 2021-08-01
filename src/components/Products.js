@@ -12,9 +12,9 @@ import {
     ProductButton
 } from './ProductsElements';
 
-const Products = ({ heading, data, specialToggle }) => {
+const Products = ({ heading, data, specialToggle, productId }) => {
     return (
-        <ProductsContainer onClick={specialToggle}>
+        <ProductsContainer id={productId} onClick={specialToggle}>
             <ProductsHeading>{heading}</ProductsHeading>
             <ProductWrapper>
                 {data.map((product, index) => {

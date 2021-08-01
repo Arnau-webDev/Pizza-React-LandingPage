@@ -9,7 +9,7 @@ const Hero = ({ handleSidebar }) => {
 
     return (
         <HeroContainer>
-            <Navbar toggle={toggle} specialToggle={specialToggle} />
+            {/* <Navbar toggle={toggle} specialToggle={specialToggle} /> */}
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <HeroContent onClick={specialToggle}>
                 <HeroItems>

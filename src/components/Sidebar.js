@@ -21,11 +21,23 @@ const Sidebar = ({ isOpen, toggle }) => {
                     to="pizzaSection"
                     spy={true}
                     smooth={true}
-                    offset={-70}
                     duration={500}
                     onClick={toggle}>Pizzas</SidebarLink>
-                <SidebarLink to='/' onClick={toggle}>Desserts</SidebarLink>
-                <SidebarLink to='/' onClick={toggle}>Full Menu</SidebarLink>
+                <SidebarLink
+                    onClick={toggle}
+                    to="dessertsSection"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                >Desserts</SidebarLink>
+                <SidebarLink
+                    onClick={toggle}
+                    to="menuSection"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-250}
+                >Full Menu</SidebarLink>
             </SidebarMenu>
             <SideBtnWrap>
                 <SidebarRoute to='/' onClick={toggle}>Order Now</SidebarRoute>

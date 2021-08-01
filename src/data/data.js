@@ -64,3 +64,6 @@ export const productDataTwo = [
         button: 'Add to Cart'
     }
 ];
+
+export const productId1 = "pizzaSection";
+export const productId2 = "dessertsSection";

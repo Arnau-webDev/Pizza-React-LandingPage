@@ -1,12 +1,15 @@
 import styled from 'styled-components';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { FaPizzaSlice } from "react-icons/fa";
 
 export const Nav = styled.nav`
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin-top: -80px;
     background: transparent;
-    height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     font-weight: 700;
 `;
 
@@ -17,6 +20,7 @@ export const NavLink = styled(Link)`
     align-items: center;
     text-decoration: none;
     cursor: pointer;
+    margin-left: 25px;
 
     @media screen and (max-width: 400px) {
         position: absolute;
