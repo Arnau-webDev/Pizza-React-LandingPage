@@ -13,7 +13,7 @@ export const HeroContent = styled.div`
     height: 100vh;
     max-height: 100% fit-content;
     width: 100vw;
-    padding: 0rem calc((100vw - 1300px) / 2);
+    /* padding: 0rem calc((100vw - 1300px) / 2); */
 `;
 
 export const HeroItems = styled.div`
@@ -24,7 +24,8 @@ export const HeroItems = styled.div`
     height: 100vh;
     max-height: 100%;
     padding: 0 2rem;
-    width: 650px;
+    /* width: 650px; */
+    max-width: 920px;
     color: #fff;
     text-transform: uppercase;
     line-height: 1;
